@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+#root,
+.app,
+.contenitore {
+  height: 100%;
+}
+
+.app {
+  z-index: 1 !important;
+}
+
+.contenitore {
+  margin: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 60px;
+  z-index: 0;
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 0 !important;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+}
+
+/* .app::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  filter: blur(5px);
+  transform: scale(1.1);
+} */
+
+.content {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ricerca {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.btnCerca {
+  min-width: 100px;
+  min-height: 60px;
+  border-radius: 18px !important;
+  background-color: rgba(206, 212, 218, 0.904) !important;
+}
+
+.sezioneRicerca {
+  position: relative;
+  /* top: -20%; */
+  min-width: 76vw;
+  max-width: 100vw;
+}
+
+.ricercaNascosto {
+  background-color: white !important;
+}
+
+.ricerca input {
+  border-right: white;
+}
+
+#inputPlace {
+  font-size: 1.3rem;
+  font-weight: 450;
+}
+
+#inputPlace::placeholder {
+  font-size: 1.2rem;
+  font-weight: 350;
+}
+
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid #ced4da !important;
+  border-right: none !important;
+}
+
+.sezioneMeteo {
+  width: clamp(300px, 95vw, 500px);
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: hsla(0, 0%, 100%, 0.61);
+  padding: 0px 12px 22px 12px;
+  align-items: center;
+  z-index: 2 !important;
+  /* backdrop-filter: blur(8px); */
+}
+
+.location {
+  font-size: 1.7rem;
+  justify-self: flex-start;
+  align-self: center;
+  padding-bottom: 10px;
+}
+
+.currentWeather {
+  justify-self: flex-end;
+}
+
+.temperature {
+  font-size: 1.4rem;
+  padding-top: 10px;
+}
+
+.forecast {
+  font-size: 1.35rem;
+}
+
+.backBtn {
+  margin-top: 30px;
+}
+
+.sezioneMeteo i {
+  font-size: 1.65rem;
+  vertical-align: sub;
+}
+
+#inputGroup-sizing-lg {
+  font-size: 1.4rem;
+}
+
+.sezioneRecenti {
+  position: relative;
+  /* top: -20%; */
+  /* min-width: 76vw;
+  max-width: 100vw; */
+  background-color: hsla(0, 0%, 100%, 0.25);
+  border-radius: 0.3rem;
+  margin: 20px 0px;
+  width: clamp(300px, 95vw, 660px);
+}
+
+.recentiTitle {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: black;
+  padding: 5px 0;
+  border-radius: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.44) !important;
+  margin-bottom: 8px;
+  /* text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white; */
+  backdrop-filter: blur(4px);
+}
+
+.elencoRecenti {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.elementoRecente button {
+  padding: 10px !important;
+  margin: 8px !important;
+  width: 130px;
+  height: 100px;
+}
+
+.locationRecenti {
+  overflow-x: hidden;
+  white-space: nowrap;
+  font-size: 0.86rem;
+  padding: 20px 0px;
+}
+
+.iconaRecenti {
+  margin-top: 10px;
+}
+
+.recentiCancella button {
+  font-size: 1rem;
+  font-weight: 450;
+  color: red;
+  margin: 8px 0 10px 0;
+  border-radius: 12px !important;
+  background-color: rgba(206, 212, 218, 0.8) !important;
+}
