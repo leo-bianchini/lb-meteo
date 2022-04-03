@@ -81,13 +81,13 @@ export default function Home(props) {
 
                         <div className='sezioneRicerca'>
                             <div className="ricerca input-group input-group-lg text-center">
-                                <span className="input-group-text" id="inputGroup-sizing-lg"><i className='bi bi-geo'></i> </span>
+                                <span className="input-group-text" id="inputGroup-sizing-lg"><i className='bi bi-geo'></i></span>
 
                                 <input type="text" id="inputPlace" className="form-control text-center" placeholder="FIRENZE o ROMA, IT"
                                     value={props.location} onChange={event => props.setLocation(event.target.value.toUpperCase())} onKeyPress={enterSearchLocation}
                                 />
 
-                                <span className="input-group-text ricercaNascosto" id="inputGroup-sizing-lg"><i onClick={deleteLocation} className={'bi bi-x-circle ' + (props.location !== '' ? 'text-dark' : 'text-white')}></i> </span>
+                                <span className="input-group-text ricercaNascosto" id="inputGroup-sizing-lg"><i onClick={deleteLocation} className={'bi bi-x-circle ' + (props.location !== '' ? '' : 'invisibile')}></i></span>
                             </div>
 
                             <button type="button" className="btnCerca btn btn-light" onClick={goToWeather}>

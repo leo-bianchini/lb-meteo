@@ -81,6 +81,11 @@ body,
 
 .ricercaNascosto {
   background-color: white !important;
+  outline: none !important;
+}
+
+.invisibile {
+  opacity: 0;
 }
 
 .ricerca input {
